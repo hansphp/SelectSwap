@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../Source/assets/SelectSwap.css">
+<title>Demo - SelectSwap</title>
+<script type="text/javascript" src="mootools-core-1.4.5-full-nocompat.js" charset="utf-8"></script>
+<script type="text/javascript" src="../Source/SelectSwap.js" charset="utf-8"></script>
+<script type="text/javascript">
+window.addEvent('domready', function() {
+	var ddd = new MooTools.SelectSwap("selectSwapContent",
+					{
+					'script': 'datos.json',
+					'lstPool': 'All',
+					'lstSelected': 'Selected',
+					}).get();
+});
+</script>
+</head>
+<body>
+	<div style="text-align: center; margin: 0 auto;">
+        <h1>SelectSwap - Demo</h1>
+        <h2>What would you add to your sandwich?</h2>
+    </div>
+    <hr>
+	<form name="lstExample" id="lstExample" method="post" action="post.php">
+    	<div id="selectSwapContent"></div>
+	<input type="submit" value="sds">
+    </form>
+</body>
+</html>
